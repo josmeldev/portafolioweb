@@ -1,6 +1,22 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { 
+  JavaOriginal,
+  LaravelOriginal,
+  SpringOriginal,
+  PostgresqlOriginal,
+  FirebaseOriginal,
+  Css3Original,
+  Html5Original,
+  DartOriginal,
+  FlutterOriginal,
+  GitOriginal,
+  GithubOriginal,
+  PostmanOriginal,
+  SwaggerOriginal,
+  DockerOriginal
+} from 'devicons-react';
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,6 +71,7 @@ export default function Home() {
               <a href="#home" className="text-white hover:text-blue-400 transition-colors">Inicio</a>
               <a href="#about" className="text-white hover:text-blue-400 transition-colors">Acerca de</a>
               <a href="#experience" className="text-white hover:text-blue-400 transition-colors">Experiencia</a>
+              <a href="#technologies" className="text-white hover:text-blue-400 transition-colors">Tecnologías</a>
               <a href="#projects" className="text-white hover:text-blue-400 transition-colors">Proyectos</a>
               <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 border border-white/20">
                 Contacto
@@ -106,6 +123,13 @@ export default function Home() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Experiencia
+                </a>
+                <a 
+                  href="#technologies" 
+                  className="text-white hover:text-blue-400 transition-colors py-2 px-4 hover:bg-white/5 rounded-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tecnologías
                 </a>
                 <a 
                   href="#projects" 
@@ -301,6 +325,163 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section id="technologies" className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
+            Tecnologías
+          </h2>
+          
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              
+              {/* Java */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <JavaOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Java</span>
+              </div>
+
+              {/* Laravel */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <LaravelOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Laravel</span>
+              </div>
+
+              {/* Spring Boot */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <SpringOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Spring Boot</span>
+              </div>
+
+              {/* PostgreSQL */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <PostgresqlOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">PostgreSQL</span>
+              </div>
+
+              {/* Firebase */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <FirebaseOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Firebase</span>
+              </div>
+
+              {/* CSS */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <Css3Original size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">CSS</span>
+              </div>
+
+              {/* HTML */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <Html5Original size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">HTML</span>
+              </div>
+
+              {/* Dart */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <DartOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Dart</span>
+              </div>
+
+              {/* Flutter */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <FlutterOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Flutter</span>
+              </div>
+
+              {/* Git */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <GitOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Git</span>
+              </div>
+
+              {/* GitHub */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <GithubOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">GitHub</span>
+              </div>
+
+              {/* Postman */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <PostmanOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Postman</span>
+              </div>
+
+              {/* Swagger */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <SwaggerOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Swagger</span>
+              </div>
+
+              {/* REST API */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <svg className="w-10 h-10 text-purple-500 group-hover:text-purple-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM8.5 6h7c.276 0 .5.224.5.5s-.224.5-.5.5h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm0 2h7c.276 0 .5.224.5.5s-.224.5-.5.5h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm0 2h7c.276 0 .5.224.5.5s-.224.5-.5.5h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm0 2h7c.276 0 .5.224.5.5s-.224.5-.5.5h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm0 2h7c.276 0 .5.224.5.5s-.224.5-.5.5h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm0 2h7c.276 0 .5.224.5.5s-.224.5-.5.5h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5z"/>
+                  </svg>
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">REST API</span>
+              </div>
+
+              {/* Arquitectura MVC */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <svg className="w-10 h-10 text-indigo-500 group-hover:text-indigo-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">MVC</span>
+              </div>
+
+              {/* JWT Auth */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <svg className="w-10 h-10 text-red-500 group-hover:text-red-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                  </svg>
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">JWT Auth</span>
+              </div>
+
+              {/* Docker */}
+              <div className="group flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 mb-3 flex items-center justify-center">
+                  <DockerOriginal size={40} />
+                </div>
+                <span className="text-sm font-medium text-gray-300 text-center">Docker</span>
+              </div>
+
             </div>
           </div>
         </div>
