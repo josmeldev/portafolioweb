@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,13 +20,15 @@ export default function Home() {
     <div className="min-h-screen bg-gray-900">
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
-        isScrolled 
+        isScrolled || isMobileMenuOpen
           ? 'bg-black/20 backdrop-blur-md border-white/10' 
           : 'bg-transparent border-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-white font-bold text-xl">Josmel</div>
+            
+            {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#home" className="text-white hover:text-blue-400 transition-colors">Inicio</a>
               <a href="#about" className="text-white hover:text-blue-400 transition-colors">Acerca de</a>
@@ -34,7 +37,63 @@ export default function Home() {
                 Contacto
               </a>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+              aria-label="Toggle menu"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
           </div>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden border-t border-white/10 py-4">
+              <div className="flex flex-col space-y-4">
+                <a 
+                  href="#home" 
+                  className="text-white hover:text-blue-400 transition-colors py-2 px-4 hover:bg-white/5 rounded-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Inicio
+                </a>
+                <a 
+                  href="#about" 
+                  className="text-white hover:text-blue-400 transition-colors py-2 px-4 hover:bg-white/5 rounded-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Acerca de
+                </a>
+                <a 
+                  href="#projects" 
+                  className="text-white hover:text-blue-400 transition-colors py-2 px-4 hover:bg-white/5 rounded-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Proyectos
+                </a>
+                <a 
+                  href="#contact" 
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 text-center mx-4"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contacto
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
