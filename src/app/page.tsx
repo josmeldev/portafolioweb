@@ -5,6 +5,10 @@ import { useEffect, useState } from 'react';
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [displayedName, setDisplayedName] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+  
+  const fullName = 'Josmel';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +18,24 @@ export default function Home() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex < fullName.length) {
+        setDisplayedName(fullName.slice(0, currentIndex + 1));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+        // Ocultar el cursor después de una pequeña pausa
+        setTimeout(() => {
+          setShowCursor(false);
+        }, 500); // Espera 500ms después de terminar de escribir
+      }
+    }, 150); // 150ms entre cada letra
+
+    return () => clearInterval(typingInterval);
   }, []);
 
   return (
@@ -112,7 +134,12 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <div className="pt-20 pb-16">
             <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
-              Hola, soy <span className="text-blue-400">Josmel</span>
+              Hola, soy <span className="text-blue-400 relative">
+                {displayedName}
+                {showCursor && (
+                  <span className="absolute top-0 animate-pulse ml-1">|</span>
+                )}
+              </span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
               Desarrollador Web Full Stack especializado en crear experiencias digitales excepcionales
