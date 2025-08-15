@@ -139,7 +139,7 @@ export default function Home() {
                 Hola, soy <span className="text-blue-400">Josmel</span>
               </h1>
               <p className="text-xl sm:text-2xl text-gray-300 mb-6">
-                Desarrollador Web Full Stack especializado en crear experiencias digitales excepcionales
+                Desarrollador de software especializado en desarrollo backend con Laravel y SpringBoot, creando soluciones eficientes y escalables
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
@@ -205,17 +205,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gray-300 text-lg mb-6">
-                Soy un desarrollador web apasionado con experiencia en tecnologías modernas como React, Next.js, y TypeScript. 
-                Me especializo en crear aplicaciones web performantes y con excelente experiencia de usuario.
+                Ingeniero de Sistemas con enfoque en el desarrollo backend, experiencia en Laravel y conocimientos en SpringBoot. 
+                Especializado en diseñar e implementar soluciones eficientes y escalables. Destacado por mi proactividad, 
+                capacidad para el trabajo colaborativo y familiaridad con metodologías ágiles. Profesional autodidacta, 
+                con gran disposición para aprender e incorporar nuevas tecnologías.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-white font-semibold mb-2">Frontend</h3>
-                  <p className="text-gray-400 text-sm">React, Next.js, TypeScript, Tailwind CSS</p>
+                  <h3 className="text-white font-semibold mb-2">Backend</h3>
+                  <p className="text-gray-400 text-sm">Laravel, SpringBoot, PHP, Java</p>
                 </div>
                 <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-white font-semibold mb-2">Backend</h3>
-                  <p className="text-gray-400 text-sm">Node.js, Express, PostgreSQL, MongoDB</p>
+                  <h3 className="text-white font-semibold mb-2">Frontend</h3>
+                  <p className="text-gray-400 text-sm">React, Next.js, TypeScript, Tailwind CSS</p>
                 </div>
               </div>
             </div>
