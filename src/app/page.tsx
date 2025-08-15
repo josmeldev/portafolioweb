@@ -54,6 +54,7 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#home" className="text-white hover:text-blue-400 transition-colors">Inicio</a>
               <a href="#about" className="text-white hover:text-blue-400 transition-colors">Acerca de</a>
+              <a href="#experience" className="text-white hover:text-blue-400 transition-colors">Experiencia</a>
               <a href="#projects" className="text-white hover:text-blue-400 transition-colors">Proyectos</a>
               <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 border border-white/20">
                 Contacto
@@ -98,6 +99,13 @@ export default function Home() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Acerca de
+                </a>
+                <a 
+                  href="#experience" 
+                  className="text-white hover:text-blue-400 transition-colors py-2 px-4 hover:bg-white/5 rounded-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Experiencia
                 </a>
                 <a 
                   href="#projects" 
@@ -209,6 +217,91 @@ export default function Home() {
               capacidad para el trabajo colaborativo y familiaridad con metodologías ágiles. Profesional autodidacta, 
               con gran disposición para aprender e incorporar nuevas tecnologías.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
+            Experiencia Profesional
+          </h2>
+          
+          <div className="max-w-4xl mx-auto">
+            {/* Timeline Container */}
+            <div className="relative">
+              {/* Vertical Line */}
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-blue-700"></div>
+              
+              {/* Experience Item */}
+              <div className="relative flex items-start mb-12">
+                {/* Timeline Icon */}
+                <div className="relative z-10 flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center border-4 border-white/20 shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 6h-2V4c0-1.11-.89-2-2-2H8c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM8 4h8v2H8V4zm12 15H4V8h16v11z"/>
+                    <circle cx="12" cy="12" r="2"/>
+                  </svg>
+                </div>
+                
+                {/* Content Card */}
+                <div className="ml-8 flex-1">
+                  <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 shadow-lg">
+                    {/* Header */}
+                    <div className="mb-4">
+                      <h3 className="text-xl font-bold text-white mb-1">Ditech-Group SAC</h3>
+                      <h4 className="text-lg text-blue-400 font-semibold mb-2">Desarrollador BackEnd (Practicante)</h4>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-gray-400">
+                        <span className="flex items-center gap-1">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          </svg>
+                          Febrero 2024 – Septiembre 2024
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                          </svg>
+                          Miramar, La Libertad
+                        </span>
+                      </div>
+                    </div>
+                    
+                    {/* Achievements */}
+                    <div className="space-y-3 mb-4">
+                      <div className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                          Contribuí al desarrollo de un sistema web para la gestión de guías de remisión y cálculo de pagos periódicos para transportistas del sector agropecuario, implementando lógica de negocio en Laravel y base de datos en PostgreSQL.
+                        </p>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                          Desarrollé funcionalidades backend para un libro de reclamaciones digital, integrando notificaciones automáticas, seguimiento de estados y sistema de auditoría interna.
+                        </p>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                          Implementé el backend de un sistema de ventas para una cadena de restaurantes, con gestión de stock en tiempo real, reportes en dashboard y control de productos.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    {/* Tech Stack */}
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full border border-blue-500/30">Laravel</span>
+                      <span className="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full border border-blue-500/30">PostgreSQL</span>
+                      <span className="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full border border-blue-500/30">PHP</span>
+                      <span className="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full border border-blue-500/30">Backend Development</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
