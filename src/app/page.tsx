@@ -98,8 +98,18 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
+      <section id="home" className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Grid Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="h-full w-full bg-grid-pattern bg-repeat" style={{
+              backgroundImage: `url("data:image/svg+xml,%3csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cpattern id='grid' width='60' height='60' patternUnits='userSpaceOnUse'%3e%3cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='%23ffffff' stroke-width='1'/%3e%3c/pattern%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23grid)' /%3e%3c/svg%3e")`,
+            }}></div>
+          </div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
           <div className="pt-20 pb-16">
             <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
               Hola, soy <span className="text-blue-400">Josmel</span>
