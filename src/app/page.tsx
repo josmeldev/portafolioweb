@@ -331,7 +331,7 @@ export default function Home() {
       </section>
 
       {/* Technologies Section */}
-      <section id="technologies" className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="technologies" className="py-16 px-4 sm:px-6 lg:px-8 bg-black/20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
             Tecnologías
