@@ -48,7 +48,7 @@ export default function Home() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-white font-bold text-xl">Josmel</div>
+            <div className="text-white font-bold text-xl">Josmel Vergara</div>
             
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
@@ -202,34 +202,13 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
             Acerca de Mí
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-gray-300 text-lg mb-6">
-                Ingeniero de Sistemas con enfoque en el desarrollo backend, experiencia en Laravel y conocimientos en SpringBoot. 
-                Especializado en diseñar e implementar soluciones eficientes y escalables. Destacado por mi proactividad, 
-                capacidad para el trabajo colaborativo y familiaridad con metodologías ágiles. Profesional autodidacta, 
-                con gran disposición para aprender e incorporar nuevas tecnologías.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-white font-semibold mb-2">Backend</h3>
-                  <p className="text-gray-400 text-sm">Laravel, SpringBoot, PHP, Java</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-white font-semibold mb-2">Frontend</h3>
-                  <p className="text-gray-400 text-sm">React, Next.js, TypeScript, Tailwind CSS</p>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-blue-600 rounded-full flex items-center justify-center overflow-hidden">
-                <img 
-                  src="/foto.png" 
-                  alt="Josmel - Desarrollador Web Full Stack" 
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-xl sm:text-2xl text-gray-300 leading-relaxed">
+              Ingeniero de Sistemas con enfoque en el desarrollo backend, experiencia en Laravel y conocimientos en SpringBoot. 
+              Especializado en diseñar e implementar soluciones eficientes y escalables. Destacado por mi proactividad, 
+              capacidad para el trabajo colaborativo y familiaridad con metodologías ágiles. Profesional autodidacta, 
+              con gran disposición para aprender e incorporar nuevas tecnologías.
+            </p>
           </div>
         </div>
       </section>
