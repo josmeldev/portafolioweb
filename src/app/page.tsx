@@ -501,9 +501,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
             {/* Proyecto 1 - Crack-D */}
-            <div className="group relative bg-purple-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
+            <div className="group relative bg-purple-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col h-[500px]">
               <div className="aspect-video bg-purple-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
@@ -513,24 +513,26 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-white font-semibold text-xl mb-2">Crack-D</h3>
-                <p className="text-gray-400 text-sm mb-4">
+                <p className="text-gray-400 text-sm mb-4 flex-1">
                   Desarrollé una app móvil multiplataforma con Flutter y FastAPI que integra modelos de Deep Learning para la clasificación de grietas estructurales por nivel de riesgo, alcanzando un 90% de precisión.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Flutter</span>
-                  <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">FastAPI</span>
-                  <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Deep Learning</span>
+                <div className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Flutter</span>
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">FastAPI</span>
+                    <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Deep Learning</span>
+                  </div>
+                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
+                    → Ir al proyecto
+                  </button>
                 </div>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
-                  → Ir al proyecto
-                </button>
               </div>
             </div>
 
             {/* Proyecto 2 - Cifrador de texto */}
-            <div className="group relative bg-yellow-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
+            <div className="group relative bg-yellow-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col h-[500px]">
               <div className="aspect-video bg-yellow-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
@@ -540,24 +542,26 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-white font-semibold text-xl mb-2">Cifrador de texto</h3>
-                <p className="text-gray-400 text-sm mb-4">
+                <p className="text-gray-400 text-sm mb-4 flex-1">
                   Implementé una interfaz web responsive con HTML, CSS y JavaScript para la encriptación y desencriptación de texto en tiempo real.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">HTML</span>
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">CSS</span>
-                  <span className="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded">JavaScript</span>
+                <div className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">HTML</span>
+                    <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">CSS</span>
+                    <span className="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded">JavaScript</span>
+                  </div>
+                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
+                    → Ir al proyecto
+                  </button>
                 </div>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
-                  → Ir al proyecto
-                </button>
               </div>
             </div>
 
             {/* Proyecto 3 - Conversor de monedas */}
-            <div className="group relative bg-green-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
+            <div className="group relative bg-green-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col h-[500px]">
               <div className="aspect-video bg-green-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
@@ -567,24 +571,26 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-white font-semibold text-xl mb-2">Conversor de monedas</h3>
-                <p className="text-gray-400 text-sm mb-4">
+                <p className="text-gray-400 text-sm mb-4 flex-1">
                   Construí una aplicación de escritorio en Java utilizando Swing para la conversión de monedas, con una interfaz intuitiva y funcionalidades.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded">Java</span>
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Swing</span>
-                  <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Desktop</span>
+                <div className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded">Java</span>
+                    <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Swing</span>
+                    <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Desktop</span>
+                  </div>
+                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
+                    → Ir al proyecto
+                  </button>
                 </div>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
-                  → Ir al proyecto
-                </button>
               </div>
             </div>
 
             {/* Proyecto 4 - Txtscan */}
-            <div className="group relative bg-cyan-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
+            <div className="group relative bg-cyan-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col h-[500px]">
               <div className="aspect-video bg-cyan-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
@@ -594,19 +600,21 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-white font-semibold text-xl mb-2">Txtscan</h3>
-                <p className="text-gray-400 text-sm mb-4">
+                <p className="text-gray-400 text-sm mb-4 flex-1">
                   Desarrollé un aplicativo móvil multiplataforma con Flutter y FastAPI que integra la detección de mensajes de texto maliciosos en tiempo real usando un modelo entrenado con un conjunto de datos público, obteniendo un 96% de precisión.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Flutter</span>
-                  <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">FastAPI</span>
-                  <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">ML Model</span>
+                <div className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Flutter</span>
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">FastAPI</span>
+                    <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">ML Model</span>
+                  </div>
+                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
+                    → Ir al proyecto
+                  </button>
                 </div>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
-                  → Ir al proyecto
-                </button>
               </div>
             </div>
 
