@@ -504,7 +504,12 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             {/* Proyecto 1 - Crack-D */}
             <div className="group relative bg-purple-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
-              <div className="aspect-video bg-purple-700 relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden">
+                <img 
+                  src="/crack-d-portafolio.webp" 
+                  alt="Crack-D - App de clasificación de grietas con Deep Learning" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 text-white text-sm">
