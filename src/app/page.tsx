@@ -503,7 +503,7 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             {/* Proyecto 1 - Crack-D */}
-            <div className="group relative bg-purple-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col h-[500px]">
+            <div className="group relative bg-purple-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video bg-purple-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
@@ -532,7 +532,7 @@ export default function Home() {
             </div>
 
             {/* Proyecto 2 - Cifrador de texto */}
-            <div className="group relative bg-yellow-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col h-[500px]">
+            <div className="group relative bg-yellow-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video bg-yellow-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
@@ -561,7 +561,7 @@ export default function Home() {
             </div>
 
             {/* Proyecto 3 - Conversor de monedas */}
-            <div className="group relative bg-green-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col h-[500px]">
+            <div className="group relative bg-green-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video bg-green-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
@@ -590,7 +590,7 @@ export default function Home() {
             </div>
 
             {/* Proyecto 4 - Txtscan */}
-            <div className="group relative bg-cyan-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col h-[500px]">
+            <div className="group relative bg-cyan-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video bg-cyan-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
