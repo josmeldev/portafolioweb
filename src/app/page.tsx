@@ -34,6 +34,9 @@ export default function Home() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [submitCount, setSubmitCount] = useState(0);
+  const [lastSubmitTime, setLastSubmitTime] = useState(0);
   
   const fullName = 'Josmel';
 
@@ -78,8 +81,35 @@ export default function Home() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setErrorMessage('');
 
     try {
+      // PROTECCIÓN 1: Rate limiting (máximo 3 envíos por hora)
+      const now = Date.now();
+      const oneHour = 60 * 60 * 1000; // 1 hora en millisegundos
+      
+      if (now - lastSubmitTime < 2 * 60 * 1000) { // 2 minutos entre envíos
+        throw new Error('Por favor espera 2 minutos antes de enviar otro mensaje.');
+      }
+
+      // PROTECCIÓN 2: Verificar contenido spam básico
+      const spamWords = ['viagra', 'casino', 'lottery', 'winner', 'million', 'click here', 'free money'];
+      const messageText = (formData.message + formData.subject + formData.name).toLowerCase();
+      const hasSpam = spamWords.some(word => messageText.includes(word));
+      
+      if (hasSpam) {
+        throw new Error('Mensaje detectado como spam. Por favor revisa el contenido.');
+      }
+
+      // PROTECCIÓN 3: Validación básica de contenido
+      if (formData.message.length < 10) {
+        throw new Error('El mensaje debe tener al menos 10 caracteres.');
+      }
+
+      if (formData.name.length < 2) {
+        throw new Error('El nombre debe tener al menos 2 caracteres.');
+      }
+
       // Configuración de EmailJS usando variables de entorno
       const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
       const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -92,7 +122,7 @@ export default function Home() {
       console.log('Form data:', formData);
 
       if (!serviceID || !templateID || !publicKey) {
-        throw new Error('Configuración de EmailJS incompleta. Verifica las variables de entorno en .env.local');
+        throw new Error('Error de configuración. Por favor intenta más tarde.');
       }
 
       // Envío real con EmailJS - Variables ajustadas a tu template
@@ -111,9 +141,13 @@ export default function Home() {
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
+      setLastSubmitTime(now);
+      setSubmitCount(prev => prev + 1);
+      
     } catch (error) {
       console.error('Error enviando email:', error);
       setSubmitStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'Error al enviar el mensaje. Por favor intenta de nuevo.');
     } finally {
       setIsSubmitting(false);
     }
@@ -745,13 +779,26 @@ export default function Home() {
           <div className="bg-gray-900/50 rounded-2xl p-8 border border-white/10">
             {submitStatus === 'success' && (
               <div className="mb-6 p-4 bg-green-500/20 border border-green-500/30 rounded-lg">
-                <p className="text-green-400 text-center">¡Mensaje enviado exitosamente! Te responderé pronto.</p>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-green-400">¡Mensaje enviado exitosamente! Te responderé pronto.</p>
+                </div>
               </div>
             )}
             
-            {submitStatus === 'error' && (
+            {submitStatus === 'error' && errorMessage && (
               <div className="mb-6 p-4 bg-red-500/20 border border-red-500/30 rounded-lg">
-                <p className="text-red-400 text-center">Error al enviar el mensaje. Por favor intenta de nuevo.</p>
+                <div className="flex items-start">
+                  <svg className="w-5 h-5 text-red-400 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                  </svg>
+                  <div className="flex-1">
+                    <p className="text-red-400 font-medium mb-1">Error al enviar mensaje</p>
+                    <p className="text-red-300 text-sm">{errorMessage}</p>
+                  </div>
+                </div>
               </div>
             )}
             
