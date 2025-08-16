@@ -503,7 +503,7 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             {/* Proyecto 1 - Crack-D */}
-            <div className="group relative bg-purple-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
+            <div className="group relative bg-gray-900/80 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video relative overflow-hidden">
                 <img 
                   src="/crack-d-portafolio.webp" 
@@ -542,7 +542,7 @@ export default function Home() {
             </div>
 
             {/* Proyecto 2 - Cifrador de texto */}
-            <div className="group relative bg-yellow-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
+            <div className="group relative bg-gray-900/80 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video relative overflow-hidden">
                 <img 
                   src="/encriptador-portafolio.webp" 
@@ -581,7 +581,7 @@ export default function Home() {
             </div>
 
             {/* Proyecto 3 - Conversor de monedas */}
-            <div className="group relative bg-green-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
+            <div className="group relative bg-gray-900/80 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-green-800 to-green-600 flex items-center justify-center">
                 <img 
                   src="/conversor.webp" 
@@ -620,7 +620,7 @@ export default function Home() {
             </div>
 
             {/* Proyecto 4 - Txtscan */}
-            <div className="group relative bg-cyan-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
+            <div className="group relative bg-gray-900/80 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-cyan-800 to-cyan-600 flex items-center justify-center">
                 <img 
                   src="/txtscan-portafolio.webp" 
