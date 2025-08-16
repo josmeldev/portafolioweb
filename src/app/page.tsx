@@ -538,7 +538,12 @@ export default function Home() {
 
             {/* Proyecto 2 - Cifrador de texto */}
             <div className="group relative bg-yellow-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
-              <div className="aspect-video bg-yellow-700 relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden">
+                <img 
+                  src="/encriptador-portafolio.webp" 
+                  alt="Cifrador de texto - Encriptación y desencriptación en tiempo real" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 text-white text-sm">
@@ -558,16 +563,26 @@ export default function Home() {
                     <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">CSS</span>
                     <span className="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded">JavaScript</span>
                   </div>
-                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
+                  <a 
+                    href="https://josmeldev.github.io/encriptador-de-texto/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors flex items-center justify-center"
+                  >
                     → Ir al proyecto
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
 
             {/* Proyecto 3 - Conversor de monedas */}
             <div className="group relative bg-green-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
-              <div className="aspect-video bg-green-700 relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-green-800 to-green-600 flex items-center justify-center">
+                <img 
+                  src="/conversor.webp" 
+                  alt="Conversor de monedas - Aplicación de escritorio en Java Swing" 
+                  className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                />
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 text-white text-sm">
@@ -596,7 +611,12 @@ export default function Home() {
 
             {/* Proyecto 4 - Txtscan */}
             <div className="group relative bg-cyan-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
-              <div className="aspect-video bg-cyan-700 relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-cyan-800 to-cyan-600 flex items-center justify-center">
+                <img 
+                  src="/txtscan-portafolio.webp" 
+                  alt="Txtscan - App de detección de mensajes maliciosos con Machine Learning" 
+                  className="max-w-full max-h-full object-contain"
+                />
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 text-white text-sm">
