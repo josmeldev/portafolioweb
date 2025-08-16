@@ -512,63 +512,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {/* Proyecto 1 - E-commerce */}
-            <div className="group relative bg-slate-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
-              <div className="aspect-video bg-slate-700 relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="flex items-center gap-2 text-white text-sm">
-                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                    <span>E-commerce Platform</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-white font-semibold text-xl mb-2">Tienda Online</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Plataforma de e-commerce completa con carrito de compras, pagos y panel de administración.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Next.js</span>
-                  <span className="px-2 py-1 bg-slate-500/20 text-slate-400 text-xs rounded">Node.js</span>
-                  <span className="px-2 py-1 bg-gray-500/20 text-gray-400 text-xs rounded">MongoDB</span>
-                </div>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
-                  → Ir al proyecto
-                </button>
-              </div>
-            </div>
-
-            {/* Proyecto 2 - Dashboard */}
-            <div className="group relative bg-blue-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
-              <div className="aspect-video bg-blue-700 relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="flex items-center gap-2 text-white text-sm">
-                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                    <span>Analytics Dashboard</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-white font-semibold text-xl mb-2">Dashboard Analítico</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Dashboard interactivo con gráficos en tiempo real y visualización de datos complejos.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">React</span>
-                  <span className="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded">Chart.js</span>
-                  <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded">Firebase</span>
-                </div>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
-                  → Ir al proyecto
-                </button>
-              </div>
-            </div>
-
-            {/* Proyecto 3 - App Móvil */}
-            <div className="group relative bg-orange-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
-              <div className="aspect-video bg-orange-700 relative overflow-hidden">
+            {/* Proyecto 1 - Crack-D */}
+            <div className="group relative bg-purple-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
+              <div className="aspect-video bg-purple-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 text-white text-sm">
@@ -578,14 +524,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-white font-semibold text-xl mb-2">App de Tareas</h3>
+                <h3 className="text-white font-semibold text-xl mb-2">Crack-D</h3>
                 <p className="text-gray-400 text-sm mb-4">
-                  Aplicación móvil para gestión de tareas con sincronización en la nube y notificaciones.
+                  Desarrollé una app móvil multiplataforma con Flutter y FastAPI que integra modelos de Deep Learning para la clasificación de grietas estructurales por nivel de riesgo, alcanzando un 90% de precisión.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">React Native</span>
-                  <span className="px-2 py-1 bg-indigo-500/20 text-indigo-400 text-xs rounded">Redux</span>
-                  <span className="px-2 py-1 bg-slate-500/20 text-slate-400 text-xs rounded">Express</span>
+                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Flutter</span>
+                  <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">FastAPI</span>
+                  <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Deep Learning</span>
                 </div>
                 <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
                   → Ir al proyecto
@@ -593,26 +539,26 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Proyecto 4 - API Rest */}
-            <div className="group relative bg-indigo-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
-              <div className="aspect-video bg-indigo-700 relative overflow-hidden">
+            {/* Proyecto 2 - Cifrador de texto */}
+            <div className="group relative bg-yellow-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
+              <div className="aspect-video bg-yellow-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 text-white text-sm">
                     <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                    <span>REST API</span>
+                    <span>Web App</span>
                   </div>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-white font-semibold text-xl mb-2">API de Autenticación</h3>
+                <h3 className="text-white font-semibold text-xl mb-2">Cifrador de texto</h3>
                 <p className="text-gray-400 text-sm mb-4">
-                  API REST robusta con autenticación JWT, validaciones y documentación completa.
+                  Implementé una interfaz web responsive con HTML, CSS y JavaScript para la encriptación y desencriptación de texto en tiempo real.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-slate-500/20 text-slate-400 text-xs rounded">Node.js</span>
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">PostgreSQL</span>
-                  <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">Swagger</span>
+                  <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">HTML</span>
+                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">CSS</span>
+                  <span className="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded">JavaScript</span>
                 </div>
                 <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
                   → Ir al proyecto
@@ -620,26 +566,26 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Proyecto 5 - Blog */}
-            <div className="group relative bg-gray-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
-              <div className="aspect-video bg-gray-700 relative overflow-hidden">
+            {/* Proyecto 3 - Conversor de monedas */}
+            <div className="group relative bg-green-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
+              <div className="aspect-video bg-green-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 text-white text-sm">
                     <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                    <span>Tech Blog</span>
+                    <span>Desktop App</span>
                   </div>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-white font-semibold text-xl mb-2">Blog Personal</h3>
+                <h3 className="text-white font-semibold text-xl mb-2">Conversor de monedas</h3>
                 <p className="text-gray-400 text-sm mb-4">
-                  Blog personal con sistema de comentarios, búsqueda avanzada y panel de administración.
+                  Construí una aplicación de escritorio en Java utilizando Swing para la conversión de monedas, con una interfaz intuitiva y funcionalidades.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-gray-500/20 text-gray-400 text-xs rounded">Astro</span>
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Markdown</span>
-                  <span className="px-2 py-1 bg-slate-500/20 text-slate-400 text-xs rounded">Vercel</span>
+                  <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded">Java</span>
+                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Swing</span>
+                  <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Desktop</span>
                 </div>
                 <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
                   → Ir al proyecto
@@ -647,32 +593,35 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Proyecto 6 - Clon de App */}
+            {/* Proyecto 4 - Txtscan */}
             <div className="group relative bg-cyan-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
               <div className="aspect-video bg-cyan-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 text-white text-sm">
                     <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                    <span>Clone App</span>
+                    <span>Mobile App</span>
                   </div>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-white font-semibold text-xl mb-2">Clon de Twitter</h3>
+                <h3 className="text-white font-semibold text-xl mb-2">Txtscan</h3>
                 <p className="text-gray-400 text-sm mb-4">
-                  Recreación de la interfaz y funcionalidades principales de Twitter con React y Firebase.
+                  Desarrollé un aplicativo móvil multiplataforma con Flutter y FastAPI que integra la detección de mensajes de texto maliciosos en tiempo real usando un modelo entrenado con un conjunto de datos público, obteniendo un 96% de precisión.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">React</span>
-                  <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">Firebase</span>
-                  <span className="px-2 py-1 bg-cyan-500/20 text-cyan-400 text-xs rounded">Tailwind</span>
+                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Flutter</span>
+                  <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">FastAPI</span>
+                  <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">ML Model</span>
                 </div>
                 <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
                   → Ir al proyecto
                 </button>
               </div>
             </div>
+
+
+            
           </div>
         </div>
       </section>
