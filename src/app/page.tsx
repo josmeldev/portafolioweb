@@ -529,9 +529,14 @@ export default function Home() {
                     <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">FastAPI</span>
                     <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Deep Learning</span>
                   </div>
-                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
+                  <a 
+                    href="https://github.com/josmeleli/crack_detection_app" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors flex items-center justify-center"
+                  >
                     → Ir al proyecto
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -602,9 +607,14 @@ export default function Home() {
                     <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Swing</span>
                     <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Desktop</span>
                   </div>
-                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
+                  <a 
+                    href="https://github.com/josmeldev/conversorAlura" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors flex items-center justify-center"
+                  >
                     → Ir al proyecto
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -636,9 +646,14 @@ export default function Home() {
                     <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">FastAPI</span>
                     <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">ML Model</span>
                   </div>
-                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors">
+                  <a 
+                    href="https://github.com/josmeldev/txtscan" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors flex items-center justify-center"
+                  >
                     → Ir al proyecto
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
