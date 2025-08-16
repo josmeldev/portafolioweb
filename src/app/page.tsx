@@ -490,21 +490,11 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex gap-2">
-              <span className="px-3 py-1 bg-white/10 text-white text-sm rounded-full">Grid Layout</span>
-              <span className="px-3 py-1 bg-white/10 text-white text-sm rounded-full">Flexbox</span>
-              <span className="px-3 py-1 bg-white/10 text-white text-sm rounded-full">CSS</span>
-              <span className="px-3 py-1 bg-white/10 text-white text-sm rounded-full">HTML</span>
-            </div>
-          </div>
+          
           
           <div className="mb-8">
             <h2 className="text-4xl font-bold text-white mb-4">Proyectos</h2>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-yellow-400">📋</span>
-              <span className="px-2 py-1 bg-yellow-400/20 text-yellow-400 text-sm rounded">Nivel intermedio</span>
-            </div>
+            
             <p className="text-gray-300 text-lg max-w-4xl">
               Colección de proyectos web desarrollados con diferentes tecnologías y frameworks modernos, 
               desde aplicaciones frontend hasta soluciones full-stack con bases de datos y APIs.
