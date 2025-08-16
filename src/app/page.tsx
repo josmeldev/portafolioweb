@@ -906,7 +906,7 @@ export default function Home() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2025 Josmel. Todos los derechos reservados.
+            © {new Date().getFullYear()} Josmel Vergara. Todos los derechos reservados.
           </p>
         </div>
       </footer>
