@@ -582,7 +582,7 @@ export default function Home() {
 
             {/* Proyecto 3 - Conversor de monedas */}
             <div className="group relative bg-gray-900/80 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
-              <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-green-800 to-green-600 flex items-center justify-center">
+              <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-cyan-800 to-cyan-600 flex items-center justify-center">
                 <img 
                   src="/conversor.webp" 
                   alt="Conversor de monedas - Aplicación de escritorio en Java Swing" 
