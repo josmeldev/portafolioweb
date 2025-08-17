@@ -76,6 +76,21 @@ export default function Home() {
     setCurrentYear(new Date().getFullYear());
   }, []);
 
+  // Función para descargar CV
+  const downloadCV = () => {
+    // Descarga directa desde Google Drive
+    const googleDriveFileId = '18sk_5V48gezmM0YyypZtD8Jw0XRO-8Ez';
+    const downloadUrl = `https://drive.google.com/uc?export=download&id=${googleDriveFileId}`;
+    
+    // Crear enlace temporal para forzar descarga
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.download = 'CV-Josmel-Vergara.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   // Funciones para el formulario de contacto
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -287,7 +302,10 @@ export default function Home() {
                   </svg>
                   Ver Proyectos
                 </a>
-                <button className="border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
+                <button 
+                  onClick={downloadCV}
+                  className="border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
+                >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                   </svg>
