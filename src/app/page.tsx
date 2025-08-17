@@ -25,6 +25,9 @@ export default function Home() {
   const [displayedName, setDisplayedName] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   
+  // Estado para el año (evita problemas de hidratación)
+  const [currentYear, setCurrentYear] = useState(2025);
+  
   // Estados para el formulario de contacto
   const [formData, setFormData] = useState({
     name: '',
@@ -66,6 +69,11 @@ export default function Home() {
     }, 150); // 150ms entre cada letra
 
     return () => clearInterval(typingInterval);
+  }, []);
+
+  // Sincronizar el año después de la hidratación para evitar mismatch
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
   }, []);
 
   // Funciones para el formulario de contacto
@@ -906,7 +914,7 @@ export default function Home() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Josmel Vergara. Todos los derechos reservados.
+            © {currentYear} Josmel Vergara. Todos los derechos reservados.
           </p>
         </div>
       </footer>
