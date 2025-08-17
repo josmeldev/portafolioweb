@@ -744,7 +744,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Proyecto 4 - Txtscan */}
+            {/* Proyecto 4 - Txtscan
             <div className="group relative bg-gray-900/80 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
               <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-cyan-800 to-cyan-600 flex items-center justify-center">
                 <img 
@@ -782,6 +782,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            */}
 
             {/* Proyecto 5 - Wasend */}
             <div className="group relative bg-gray-900/80 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
