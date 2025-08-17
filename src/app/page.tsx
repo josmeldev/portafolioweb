@@ -822,6 +822,45 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Proyecto 6 - Presupuesto */}
+            <div className="group relative bg-gray-900/80 rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] max-w-sm flex flex-col min-h-[28rem]">
+              <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-cyan-800 to-cyan-600 flex items-center justify-center">
+                <img 
+                  src="/finanzas.webp" 
+                  alt="Presupuesto - App móvil para gestión financiera personal" 
+                  className="max-w-full max-h-full object-contain"
+                />
+                <div className="absolute inset-0 bg-black/20"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="flex items-center gap-2 text-white text-sm">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    <span>Mobile App</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-white font-semibold text-xl mb-2">Presupuesto</h3>
+                <p className="text-gray-400 text-sm mb-4 flex-1">
+                  Desarrollé una aplicación móvil para organizar el sueldo mensual siguiendo la regla 50/30/20: 50% necesidades, 30% deseos y 20% ahorros. Incluye seguimiento de gastos y metas de ahorro.
+                </p>
+                <div className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Flutter</span>
+                    <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">Firebase</span>
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">Mobile</span>
+                  </div>
+                  <a 
+                    href="#" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors flex items-center justify-center"
+                  >
+                    → Ir al proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+
 
             
           </div>
