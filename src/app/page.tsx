@@ -811,7 +811,7 @@ export default function Home() {
                     <span className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Desktop</span>
                   </div>
                   <a 
-                    href="#" 
+                    href="https://github.com/josmeldev/wa-mensajes" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors flex items-center justify-center"
@@ -841,7 +841,7 @@ export default function Home() {
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-white font-semibold text-xl mb-2">Presupuesto</h3>
                 <p className="text-gray-400 text-sm mb-4 flex-1">
-                  Desarrollé una aplicación móvil para organizar el sueldo mensual siguiendo la regla 50/30/20: 50% necesidades, 30% deseos y 20% ahorros. Incluye seguimiento de gastos y metas de ahorro.
+                  Desarrollé una aplicación móvil para organizar el sueldo mensual siguiendo la regla 50/30/20: 50% necesidades, 30% deseos y 20% ahorros. Incluye seguimiento de gastos y dashboard.
                 </p>
                 <div className="mt-auto">
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -850,7 +850,7 @@ export default function Home() {
                     <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">Mobile</span>
                   </div>
                   <a 
-                    href="#" 
+                    href="https://github.com/josmeldev/creacode_finanzas" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm transition-colors flex items-center justify-center"
